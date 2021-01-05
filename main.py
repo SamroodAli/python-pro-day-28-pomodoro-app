@@ -9,17 +9,26 @@ GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 FONT_NAME = "Courier"
 TIMER_FONT = (FONT_NAME, 35, "bold")
-TIMER_LABEL_FONT = (FONT_NAME, 30, "normal")
+TIMER_LABEL_FONT = (FONT_NAME, 50, "bold")
 WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
+CHECKMARKS_LABEL_FONT = ("Courier", 20, "normal")
 
+# ---------------------------- TIMER RESET ------------------------------- #
 
-# ---------------------------- TIMER RESET ------------------------------- # 
+# Button  event listeners
+def button_reset_on_event():
+    print("Do something")
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 
-# ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
+# ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
+
+
+# Button  event listeners
+def button_start_on_event():
+    print("Do something")
 
 # ---------------------------- UI SETUP ------------------------------- #
 
@@ -33,25 +42,18 @@ window.config(padx=100, pady=50, bg=YELLOW)
 # ---------------------------- Widgets ------------------------------- #
 
 # Label
-label = Label(text="Timer", font=TIMER_LABEL_FONT)
-label.grid(column=1, row=0)
+timer_label = Label(text="Timer", font=TIMER_LABEL_FONT, fg=GREEN, bg=YELLOW)
+timer_label.grid(column=1, row=0)
+
 # Buttons
+start_button = Button(text="Start", command=button_start_on_event(), bg="white", highlightthickness=0)
+start_button.grid(column=0, row=2)
+reset_button = Button(text="Reset", command=button_reset_on_event(), bg="white", highlightthickness=0)
+reset_button.grid(column=2, row=2)
 
-
-# Button  event listeners
-def button_start_on_event():
-    print("Do something")
-
-
-# Button  event listeners
-def button_reset_on_event():
-    print("Do something")
-
-
-button_start = Button(text="Start", command=button_start_on_event())
-button_start.grid(column=0, row=2)
-button_reset = Button(text="Reset", command=button_reset_on_event())
-button_reset.grid(column=2, row=2)
+# Label Checkmarks
+checkmarks = Label(text="✔", fg=GREEN, bg=YELLOW, font=CHECKMARKS_LABEL_FONT)
+checkmarks.grid(column=1, row=3)
 
 # highlightthickness is  to remove the borders around the canvas
 canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
