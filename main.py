@@ -25,8 +25,8 @@ def button_reset_on_event():
 
 
 # Button  event listeners
-def button_start_on_event():
-    print("Do something")
+def start_timer():
+    count_down(5)
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
 
@@ -56,7 +56,7 @@ timer_label = Label(text="Timer", font=TIMER_LABEL_FONT, fg=GREEN, bg=YELLOW)
 timer_label.grid(column=1, row=0)
 
 # Buttons
-start_button = Button(text="Start", command=button_start_on_event(), bg="white", highlightthickness=0)
+start_button = Button(text="Start", command=start_timer, bg="white", highlightthickness=0)
 start_button.grid(column=0, row=2)
 reset_button = Button(text="Reset", command=button_reset_on_event(), bg="white", highlightthickness=0)
 reset_button.grid(column=2, row=2)
@@ -79,5 +79,4 @@ timer_text = canvas.create_text(100, 130, text="00:00", fill="white", font=TIMER
 canvas.grid(column=1, row=1)
 
 # starting countdown
-count_down(5)
 window.mainloop()
