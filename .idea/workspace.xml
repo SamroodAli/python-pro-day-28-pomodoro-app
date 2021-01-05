@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d389d01d-2718-47ad-af78-b68d2a6cb223" name="Default Changelist" comment="Feat:timer format">
+    <list default="true" id="d389d01d-2718-47ad-af78-b68d2a6cb223" name="Default Changelist" comment="Feat:Pomodoro reps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -125,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609842199306</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Feat:Pomodoro reps">
+      <created>1609846595461</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609846595461</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,6 +156,7 @@
     <MESSAGE value="Add:countdown function" />
     <MESSAGE value="Add:start timer to start_button" />
     <MESSAGE value="Feat:timer format" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat:timer format" />
+    <MESSAGE value="Feat:Pomodoro reps" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat:Pomodoro reps" />
   </component>
 </project>

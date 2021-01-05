@@ -35,12 +35,15 @@ def start_timer():
 
 #   If it is the 8th rep [every 8th rep]:
     if reps % 8 == 0:
+        timer_label.config(text="Break",fb=RED)
         count_down(long_term_break)
 #   If it's the 2nd, 4th, 6th rep [even numbers]:
     elif reps % 2 == 0:
+        timer_label.config(text="Break", fg=PINK)
         count_down(short_break_sec)
 #   If it's the 1st, 3rd, 5th, 7th rep:
     else:
+        timer_label.config(text="Work", fg=GREEN)
         count_down(work_sec)
 
 
