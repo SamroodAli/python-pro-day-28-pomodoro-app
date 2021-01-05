@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d389d01d-2718-47ad-af78-b68d2a6cb223" name="Default Changelist" comment="Feat:Pomodoro reps">
+    <list default="true" id="d389d01d-2718-47ad-af78-b68d2a6cb223" name="Default Changelist" comment="Fix:typo fb in line 38 to fg">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -132,7 +132,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609846595461</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Feat:break and work colors and label">
+      <created>1609847097738</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1609847097738</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix:typo fb in line 38 to fg">
+      <created>1609847178540</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1609847178540</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +159,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add:image using canvas widget" />
@@ -157,6 +172,8 @@
     <MESSAGE value="Add:start timer to start_button" />
     <MESSAGE value="Feat:timer format" />
     <MESSAGE value="Feat:Pomodoro reps" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat:Pomodoro reps" />
+    <MESSAGE value="Feat:break and work colors and label" />
+    <MESSAGE value="Fix:typo fb in line 38 to fg" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix:typo fb in line 38 to fg" />
   </component>
 </project>
