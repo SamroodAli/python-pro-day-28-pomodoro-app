@@ -9,29 +9,39 @@ GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 FONT_NAME = "Courier"
 TIMER_FONT = (FONT_NAME, 35, "bold")
-TIMER_LABEL_FONT = (FONT_NAME, 50, "bold")
+TIMER_LABEL_FONT = ("Georgia", 50, "italic")
 WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 CHECKMARKS_LABEL_FONT = ("Courier", 20, "normal")
 
-# ---------------------------- TIMER RESET ------------------------------- #
 
+# ---------------------------- TIMER RESET ------------------------------- #
 # Button  event listeners
 def button_reset_on_event():
     print("Do something")
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 
-# ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
-
 
 # Button  event listeners
 def button_start_on_event():
     print("Do something")
 
-# ---------------------------- UI SETUP ------------------------------- #
+# ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
 
+
+# using recursion to decrement count
+def count_down(count):
+    # access canvas.config
+    # pass in the variable to which canvas.create_text() is assigned
+    # change text to new string data, here count
+    canvas.itemconfig(timer_text, text=count)
+    if count > 0:
+        window.after(1000, count_down, count - 1)
+
+
+# ---------------------------- UI SETUP ------------------------------- #
 # tkinter window
 window = Tk()
 window.title("Pomodoro")
@@ -65,7 +75,9 @@ TOMATO_IMG = PhotoImage(file="tomato.png")
 canvas.create_image(100, 112, image=TOMATO_IMG)
 
 # laying text on top, x and y placements 103,130, fill = font-color, font-tuple
-canvas.create_text(100, 130, text="00:00", fill="white", font=TIMER_FONT)
+timer_text = canvas.create_text(100, 130, text="00:00", fill="white", font=TIMER_FONT)
 canvas.grid(column=1, row=1)
 
+# starting countdown
+count_down(5)
 window.mainloop()
