@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d389d01d-2718-47ad-af78-b68d2a6cb223" name="Default Changelist" comment="Feat:checkmarks for completed work sessions">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d389d01d-2718-47ad-af78-b68d2a6cb223" name="Default Changelist" comment="Feat:timer reset using window.after_cancel">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609848671914</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Feat:timer reset using window.after_cancel">
+      <created>1609849170626</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1609849170626</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +188,7 @@
     <MESSAGE value="Feat:break and work colors and label" />
     <MESSAGE value="Fix:typo fb in line 38 to fg" />
     <MESSAGE value="Feat:checkmarks for completed work sessions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat:checkmarks for completed work sessions" />
+    <MESSAGE value="Feat:timer reset using window.after_cancel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat:timer reset using window.after_cancel" />
   </component>
 </project>

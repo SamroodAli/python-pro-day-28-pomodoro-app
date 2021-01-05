@@ -23,7 +23,9 @@ timer = None
 # Button  event listeners
 def reset_event():
     window.after_cancel(timer)
-
+    canvas.itemconfig(timer_text, text="00:00")
+    timer_label.config(text="Timer")
+    checkmarks_label.config(text="")
 
 # ---------------------------- TIMER MECHANISM ------------------------------- #
 # Button  event listeners
