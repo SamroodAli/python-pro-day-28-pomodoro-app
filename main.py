@@ -2,7 +2,6 @@
 # ---------------------------- IMPORTS ------------------------------- #
 from tkinter import *
 import math
-import time
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
@@ -16,12 +15,14 @@ SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 CHECKMARKS_LABEL_FONT = ("Courier", 20, "normal")
 reps = 0
+# to track the window after API, so we can cancel it
+timer = None
 
 
 # ---------------------------- TIMER RESET ------------------------------- #
 # Button  event listeners
-def button_reset_on_event():
-    print("Do something")
+def reset_event():
+    window.after_cancel(timer)
 
 
 # ---------------------------- TIMER MECHANISM ------------------------------- #
@@ -62,7 +63,8 @@ def count_down(count):
     # change text to new string data, here count
     canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
     if count > 0:
-        window.after(1000, count_down, count - 1)
+        global timer
+        timer = window.after(1000, count_down, count - 1)
     else:
         checkmarks = ""
         # 1 work and 1 break [ 2 reps  ] = 1 completed work session
@@ -88,7 +90,7 @@ timer_label.grid(column=1, row=0)
 # Buttons
 start_button = Button(text="Start", command=start_timer, bg="white", highlightthickness=0)
 start_button.grid(column=0, row=2)
-reset_button = Button(text="Reset", command=button_reset_on_event(), bg="white", highlightthickness=0)
+reset_button = Button(text="Reset", command=reset_event, bg="white", highlightthickness=0)
 reset_button.grid(column=2, row=2)
 
 # Label Checkmarks
