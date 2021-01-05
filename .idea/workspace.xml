@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d389d01d-2718-47ad-af78-b68d2a6cb223" name="Default Changelist" comment="Add:start timer to start_button">
+    <list default="true" id="d389d01d-2718-47ad-af78-b68d2a6cb223" name="Default Changelist" comment="Feat:timer format">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -118,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609841594309</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Feat:timer format">
+      <created>1609842199306</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609842199306</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +148,7 @@
     <MESSAGE value="Add:checkmark label and font" />
     <MESSAGE value="Add:countdown function" />
     <MESSAGE value="Add:start timer to start_button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add:start timer to start_button" />
+    <MESSAGE value="Feat:timer format" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat:timer format" />
   </component>
 </project>
