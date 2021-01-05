@@ -1,7 +1,7 @@
 """Pomodoro app mail file"""
 # ---------------------------- IMPORTS ------------------------------- #
 from tkinter import *
-
+import math
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
@@ -21,22 +21,23 @@ CHECKMARKS_LABEL_FONT = ("Courier", 20, "normal")
 def button_reset_on_event():
     print("Do something")
 
-# ---------------------------- TIMER MECHANISM ------------------------------- # 
 
-
+# ---------------------------- TIMER MECHANISM ------------------------------- #
 # Button  event listeners
 def start_timer():
-    count_down(5)
-
-# ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
+    count_down(5*60)
+# -------------------====----- COUNTDOWN MECHANISM --------------------------- #
 
 
 # using recursion to decrement count
 def count_down(count):
+    count_min = math.floor(count/60)
+    # seconds = remainder after division by 60
+    count_sec = count % 60
     # access canvas.config
     # pass in the variable to which canvas.create_text() is assigned
     # change text to new string data, here count
-    canvas.itemconfig(timer_text, text=count)
+    canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
     if count > 0:
         window.after(1000, count_down, count - 1)
 
