@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d389d01d-2718-47ad-af78-b68d2a6cb223" name="Default Changelist" comment="Add:Timer on tomato">
+    <list default="true" id="d389d01d-2718-47ad-af78-b68d2a6cb223" name="Default Changelist" comment="Add:window and canvas background colors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -83,13 +83,32 @@
       <option name="project" value="LOCAL" />
       <updated>1609828268947</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add:window and canvas background colors">
+      <created>1609830938074</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609830938074</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add:image using canvas widget" />
     <MESSAGE value="Add:window padding and image cut fix" />
     <MESSAGE value="Add:Timer on tomato" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add:Timer on tomato" />
+    <MESSAGE value="Add:window and canvas background colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add:window and canvas background colors" />
   </component>
 </project>
