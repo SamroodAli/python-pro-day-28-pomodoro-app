@@ -1,6 +1,7 @@
 """Pomodoro app mail file"""
 # ---------------------------- IMPORTS ------------------------------- #
 from tkinter import *
+import pygame
 import math
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
@@ -10,14 +11,15 @@ YELLOW = "#f7f5dd"
 FONT_NAME = "Courier"
 TIMER_FONT = (FONT_NAME, 35, "bold")
 TIMER_LABEL_FONT = ("Georgia", 50, "italic")
-WORK_MIN = 25
+WORK_MIN = 1
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 CHECKMARKS_LABEL_FONT = ("Courier", 20, "normal")
 reps = 0
 # to track the window after API, so we can cancel it
 timer = None
-
+# init pyfame module for sound
+pygame.init()
 
 # ---------------------------- TIMER RESET ------------------------------- #
 # Button  event listeners
@@ -68,6 +70,10 @@ def count_down(count):
         global timer
         timer = window.after(1000, count_down, count - 1)
     else:
+        # code for sound
+        pygame.mixer.music.load("bell-ring-01.wav")
+        pygame.mixer.music.play()
+        # code for checkmarks
         checkmarks = ""
         # 1 work and 1 break [ 2 reps  ] = 1 completed work session
         completed_work_sessions = math.floor(reps/2)
