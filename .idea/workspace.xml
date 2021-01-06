@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d389d01d-2718-47ad-af78-b68d2a6cb223" name="Default Changelist" comment="Add:bell sound using pygame" />
+    <list default="true" id="d389d01d-2718-47ad-af78-b68d2a6cb223" name="Default Changelist" comment="Add:bell sound asset">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609909443927</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add:bell sound asset">
+      <created>1609909535630</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1609909535630</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +217,7 @@
     <MESSAGE value="Feat:timer reset using window.after_cancel" />
     <MESSAGE value="Add:labels and checkmarks reset" />
     <MESSAGE value="Add:bell sound using pygame" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add:bell sound using pygame" />
+    <MESSAGE value="Add:bell sound asset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add:bell sound asset" />
   </component>
 </project>
